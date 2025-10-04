@@ -7,7 +7,7 @@ Analyze this user message: "${transcript}"
 
 Return valid JSON:
 {
-  "moodScore": number (1 very negative → 10 very positive),
+  "moodScore": number (1 very negative → 10 very positive), 
   "analysis": "short explanation"
 }
 `;
