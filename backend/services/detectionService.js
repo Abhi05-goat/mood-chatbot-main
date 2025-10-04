@@ -1,6 +1,6 @@
 // services/detectionService.js
 const { chatCompletion } = require("./ollamaClient");
-
+// Hi :))))
 async function detectMood(transcript) {
   const detectionPrompt = `
 Analyze this user message: "${transcript}"
