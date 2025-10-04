@@ -77,7 +77,7 @@ async function getCache(userId, currentTranscript) {
     $text: { $search: currentTranscript },
   })
     .sort({ timestamp: -1 })
-    .limit(5)
+    .limit(15)
     .lean();
 
   // --- Distill relevant facts from Mongo ---
