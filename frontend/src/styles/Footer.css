@@ -1,0 +1,11 @@
+footer {
+  margin-top: 35px;
+  text-align: center;
+  font-size: 1em;
+  color: #4b0082;
+  opacity: 0.8;
+}
+hr {
+  border: none;
+  border-top: 1.2px solid #b0e0e6;
+}

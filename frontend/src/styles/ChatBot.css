@@ -1,0 +1,161 @@
+.chatbot-box {
+  background: #f0fff0;
+  border-radius: 16px;
+  margin: 24px 0 0 0;
+  box-shadow: 0 6px 16px #b0e0e633;
+  padding: 28px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 20px;
+}
+
+.chatbot-avatar-wrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.chatbot-avatar-wrap img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: contain;
+  background: #e0f7fa;
+  border: 2px solid #98fb98;
+  box-shadow: 0 2px 6px #b0e0e6;
+  transition: box-shadow 0.3s, border 0.3s;
+}
+
+.glow-avatar {
+  box-shadow: 0 0 24px 4px #90ee90, 0 0 40px 10px #b0e0e6;
+  border: 3px solid #98fb98;
+  animation: avatar-glow 1.6s infinite alternate;
+}
+
+@keyframes avatar-glow {
+  0% {
+    box-shadow: 0 0 24px 4px #90ee90, 0 0 40px 10px #b0e0e6;
+  }
+  100% {
+    box-shadow: 0 0 16px 2px #b0e0e6, 0 0 50px 8px #90ee90;
+  }
+}
+
+.chat-window {
+  min-height: 120px;
+  margin-bottom: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 0;
+  align-items: flex-start;
+}
+
+.voice-ui-bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.voice-btn {
+  background: #b0e0e6;
+  color: #228b22;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.07em;
+  font-weight: 500;
+  padding: 12px 28px;
+  box-shadow: 0 2px 7px #98fb98a0;
+  cursor: pointer;
+  transition: background 0.18s, color 0.12s;
+}
+
+.voice-btn.active {
+  background: #98fb98;
+  color: #1e5c1e;
+}
+
+.listening-dot {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: #98fb98;
+  border-radius: 50%;
+  animation: dot-blink 1.2s infinite alternate;
+}
+
+@keyframes dot-blink {
+  0% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.voice-ui-label {
+  font-size: 1.08em;
+  color: #228b22;
+  font-weight: 500;
+}
+
+.voice-response-controls {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  border-top: 1px solid #e0e0e0;
+  background-color: #f9f9f9;
+}
+
+.toggle-btn {
+  padding: 8px 12px;
+  border: 2px solid #ddd;
+  border-radius: 20px;
+  background: white;
+  cursor: pointer;
+  font-size: 12px;
+  transition: all 0.2s ease;
+}
+
+.toggle-btn.active {
+  background: #4caf50;
+  color: white;
+  border-color: #4caf50;
+}
+
+.stop-speech-btn {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 15px;
+  background: #ff6b6b;
+  color: white;
+  cursor: pointer;
+  font-size: 11px;
+}
+
+.text-input-form {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid #e0e0e0;
+  background-color: #f9f9f9;
+}
+
+.text-input {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.send-btn {
+  margin-left: 10px;
+  padding: 8px 16px;
+  background: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}

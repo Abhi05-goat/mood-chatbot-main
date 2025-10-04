@@ -1,0 +1,32 @@
+.bubble {
+  max-width: 72%;
+  padding: 12px 18px;
+  border-radius: 18px;
+  font-size: 1.07em;
+  margin-bottom: 7px;
+  box-shadow: 0 2px 10px rgba(176, 224, 230, 0.18);
+  word-break: break-word;
+}
+.bubble.chatbot {
+  background: #b0e0e6;
+  color: #2f4f4f;
+  align-self: flex-start;
+}
+.bubble.user {
+  background: #98fb98;
+  color: #2f4f4f;
+  align-self: flex-end;
+}
+.bubble.glowing {
+  box-shadow: 0 0 16px 6px #98fb98, 0 0 26px 7px #b0e0e6;
+  border: 2px solid #98fb98;
+  animation: bubble-glow 1.1s infinite alternate;
+}
+@keyframes bubble-glow {
+  0% {
+    box-shadow: 0 0 16px 6px #98fb98, 0 0 30px 7px #b0e0e6;
+  }
+  100% {
+    box-shadow: 0 0 10px 2px #b0e0e6, 0 0 28px 12px #90ee90;
+  }
+}
